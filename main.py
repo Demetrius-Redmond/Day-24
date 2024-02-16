@@ -19,5 +19,5 @@ for name in invited_names:
         template = starting_letter.read()
         ready_to_send = template.replace("[name]", f"{name}")
         print(ready_to_send)
-    with open(f"./Output/ReadyToSend/{name}.txt") as ready:
+    with open(f"./Output/ReadyToSend/{name}.txt", "w") as ready:
         ready.write(f"{ready_to_send}")
